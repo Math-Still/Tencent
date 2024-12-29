@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"网页开发学习大纲","children":[{"content":"1. 网页开发简介","children":[{"content":"什么是网页开发","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"前端与后端的区别","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"网页开发的应用领域","children":[],"payload":{"tag":"li","lines":"7,9"}}],"payload":{"tag":"h2","lines":"3,4"}},{"content":"2. 开发环境配置","children":[{"content":"选择文本编辑器（如 VSCode、Sublime Text）","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"安装浏览器开发者工具","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h2","lines":"9,10"}},{"content":"3. HTML 基础","children":[{"content":"3.1 HTML 概念","children":[{"content":"HTML 的定义与作用","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"HTML 文档结构","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"3.2 常用标签","children":[{"content":"文本标签（如 <code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>）","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"链接与图像标签（<code>&lt;a&gt;</code>、<code>&lt;img&gt;</code>）","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"列表与表格标签（<code>&lt;ul&gt;</code>、<code>&lt;table&gt;</code>）","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"21,22"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"4. CSS 样式","children":[{"content":"4.1 CSS 概念","children":[{"content":"CSS 的定义与作用","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"选择器与优先级","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h3","lines":"29,30"}},{"content":"4.2 常用属性","children":[{"content":"颜色、字体与文本样式","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"布局与定位","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"响应式设计与媒体查询","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h3","lines":"34,35"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"5. JavaScript 基础","children":[{"content":"5.1 JavaScript 概念","children":[{"content":"JavaScript 的作用与特点","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"数据类型与变量","children":[],"payload":{"tag":"li","lines":"45,47"}}],"payload":{"tag":"h3","lines":"42,43"}},{"content":"5.2 控制结构","children":[{"content":"条件语句与循环语句","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"函数的定义与调用","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h3","lines":"47,48"}},{"content":"5.3 DOM 操作","children":[{"content":"理解 DOM 的结构","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"使用 JavaScript 操作 DOM 元素","children":[],"payload":{"tag":"li","lines":"55,57"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"6. 前端框架","children":[{"content":"6.1 jQuery","children":[{"content":"jQuery 的基本用法","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"常用 jQuery 方法","children":[],"payload":{"tag":"li","lines":"62,64"}}],"payload":{"tag":"h3","lines":"59,60"}},{"content":"6.2 Vue.js 或 React","children":[{"content":"Vue.js/React 概述","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"组件化开发的基本概念","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"h3","lines":"64,65"}}],"payload":{"tag":"h2","lines":"57,58"}},{"content":"7. 后端开发简介","children":[{"content":"7.1 服务器与数据库","children":[{"content":"了解服务器的工作原理","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"数据库的基本概念","children":[],"payload":{"tag":"li","lines":"74,76"}}],"payload":{"tag":"h3","lines":"71,72"}},{"content":"7.2 使用 Node.js 或其他后端框架","children":[{"content":"Node.js 基础知识","children":[],"payload":{"tag":"li","lines":"78,79"}},{"content":"RESTful API 的创建与使用","children":[],"payload":{"tag":"li","lines":"79,81"}}],"payload":{"tag":"h3","lines":"76,77"}}],"payload":{"tag":"h2","lines":"69,70"}},{"content":"8. 项目实践","children":[{"content":"完成一个完整的网页项目","children":[],"payload":{"tag":"li","lines":"83,84"}},{"content":"整合前端与后端，展示实际应用","children":[],"payload":{"tag":"li","lines":"84,85"}}],"payload":{"tag":"h2","lines":"81,82"}}],"payload":{"tag":"h1","lines":"1,2"}},{})</script>
+</body>
+</html>

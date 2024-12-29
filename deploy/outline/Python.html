@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Python 基础学习路径","children":[{"content":"先导课","children":[{"content":"学习这个课程可以用来做什么","children":[],"payload":{"tag":"h3","lines":"4,5"}},{"content":"什么是计算机","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"基本组成","children":[{"content":"硬件","children":[{"content":"<strong>输入设备</strong>：如键盘、鼠标和扫描仪，负责将用户输入的数据传递给计算机。","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>输出设备</strong>：如显示器、打印机和扬声器，负责将计算机处理结果呈现给用户。","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<strong>中央处理单元（CPU）</strong>：计算机的“大脑”，负责执行指令和处理数据。","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>内存</strong>：临时存储数据和指令，允许计算机快速访问正在使用的信息。","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h4","lines":"14,15"}},{"content":"软件","children":[{"content":"<strong>操作系统</strong>：管理硬件和软件资源（如 Windows、Linux、macOS），为应用程序提供运行环境。","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>应用程序</strong>：执行特定任务的软件，如文字处理、电子表格和图像编辑工具。","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h4","lines":"23,24"}}],"payload":{"tag":"h3","lines":"10,11"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"1. Python 简介","children":[{"content":"什么是 Python","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Python 应用领域","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"2. Python 环境配置","children":[{"content":"安装 Python","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"配置开发环境（如 PyCharm、VSCode）","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"使用 Jupyter Notebook","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"h2","lines":"35,36"}},{"content":"3. 编写和运行 Python 代码","children":[{"content":"创建第一个 Python 程序","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"运行 Python 代码","children":[],"payload":{"tag":"li","lines":"44,46"}}],"payload":{"tag":"h2","lines":"41,42"}},{"content":"4. Python 基本语法","children":[{"content":"4.1 Python 变量类型","children":[{"content":"整数、浮点数、字符串","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"列表、元组、字典、集合","children":[],"payload":{"tag":"li","lines":"51,53"}}],"payload":{"tag":"h3","lines":"48,49"}},{"content":"4.2 Python 运算符","children":[{"content":"算术运算符","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"比较运算符","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"逻辑运算符","children":[],"payload":{"tag":"li","lines":"57,59"}}],"payload":{"tag":"h3","lines":"53,54"}},{"content":"4.3 Python 条件语句","children":[{"content":"if 语句","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"if-else 语句","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"elif 语句","children":[],"payload":{"tag":"li","lines":"63,65"}}],"payload":{"tag":"h3","lines":"59,60"}},{"content":"4.4 Python 循环语句","children":[{"content":"for 循环","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"while 循环","children":[],"payload":{"tag":"li","lines":"68,70"}}],"payload":{"tag":"h3","lines":"65,66"}},{"content":"4.5 Python break、continue 以及 pass 语句","children":[{"content":"break 的使用","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"continue 的使用","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"pass 的应用场景","children":[],"payload":{"tag":"li","lines":"74,76"}}],"payload":{"tag":"h3","lines":"70,71"}}],"payload":{"tag":"h2","lines":"46,47"}},{"content":"5. Python 基础数据结构和容器","children":[{"content":"列表、元组、字典、集合的基本操作","children":[],"payload":{"tag":"li","lines":"78,79"}},{"content":"数据结构的选择与应用","children":[],"payload":{"tag":"li","lines":"79,81"}}],"payload":{"tag":"h2","lines":"76,77"}},{"content":"6. 函数和模块","children":[{"content":"定义和调用函数","children":[],"payload":{"tag":"li","lines":"83,84"}},{"content":"函数参数与返回值","children":[],"payload":{"tag":"li","lines":"84,85"}},{"content":"模块的导入与使用","children":[],"payload":{"tag":"li","lines":"85,87"}}],"payload":{"tag":"h2","lines":"81,82"}},{"content":"7. 文件操作","children":[{"content":"读写文本文件","children":[],"payload":{"tag":"li","lines":"89,90"}},{"content":"读写二进制文件","children":[],"payload":{"tag":"li","lines":"90,91"}},{"content":"文件处理技巧","children":[],"payload":{"tag":"li","lines":"91,93"}}],"payload":{"tag":"h2","lines":"87,88"}},{"content":"8. Python 常用库","children":[{"content":"NumPy（科学计算）","children":[],"payload":{"tag":"li","lines":"95,96"}},{"content":"Pandas（数据分析）","children":[],"payload":{"tag":"li","lines":"96,97"}},{"content":"Matplotlib（数据可视化）","children":[],"payload":{"tag":"li","lines":"97,98"}},{"content":"Requests（网络请求）","children":[],"payload":{"tag":"li","lines":"98,99"}}],"payload":{"tag":"h2","lines":"93,94"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

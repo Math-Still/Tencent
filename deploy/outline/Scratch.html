@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Scratch 学习大纲","children":[{"content":"先导课","children":[{"content":"学习这个课程可以用来做什么","children":[],"payload":{"tag":"h3","lines":"4,5"}},{"content":"什么是计算机","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"基本组成","children":[{"content":"硬件","children":[{"content":"<strong>输入设备</strong>：如键盘、鼠标和扫描仪，负责将用户输入的数据传递给计算机。","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>输出设备</strong>：如显示器、打印机和扬声器，负责将计算机处理结果呈现给用户。","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<strong>中央处理单元（CPU）</strong>：计算机的“大脑”，负责执行指令和处理数据。","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>内存</strong>：临时存储数据和指令，允许计算机快速访问正在使用的信息。","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h4","lines":"14,15"}},{"content":"软件","children":[{"content":"<strong>操作系统</strong>：管理硬件和软件资源（如 Windows、Linux、macOS），为应用程序提供运行环境。","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>应用程序</strong>：执行特定任务的软件，如文字处理、电子表格和图像编辑工具。","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h4","lines":"23,24"}}],"payload":{"tag":"h3","lines":"10,11"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"1. Scratch 简介","children":[{"content":"什么是 Scratch","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Scratch 的应用与优势","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Scratch 社区与资源","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"2. 环境设置","children":[{"content":"了解 Scratch 界面","children":[{"content":"程序区","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"角色区","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"背景区","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"代码块区","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"li","lines":"38,44"}}],"payload":{"tag":"h2","lines":"36,37"}},{"content":"3. 基本概念","children":[{"content":"3.1 角色与背景","children":[{"content":"添加和选择角色","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"创建和编辑背景","children":[],"payload":{"tag":"li","lines":"49,51"}}],"payload":{"tag":"h3","lines":"46,47"}},{"content":"3.2 编程块","children":[{"content":"程序块的分类","children":[{"content":"动作块","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"外观块","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"声音块","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"控制块","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"传感器块","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"运算块","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"变量块","children":[],"payload":{"tag":"li","lines":"60,62"}}],"payload":{"tag":"li","lines":"53,62"}}],"payload":{"tag":"h3","lines":"51,52"}}],"payload":{"tag":"h2","lines":"44,45"}},{"content":"4. 编程基础","children":[{"content":"4.1 事件驱动编程","children":[{"content":"使用事件块（如“当绿旗被点击”）","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"理解事件与响应关系","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"h3","lines":"64,65"}},{"content":"4.2 控制结构","children":[{"content":"使用条件语句（if 语句）","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"使用循环（repeat、forever）","children":[],"payload":{"tag":"li","lines":"72,74"}}],"payload":{"tag":"h3","lines":"69,70"}}],"payload":{"tag":"h2","lines":"62,63"}},{"content":"5. 动画与互动","children":[{"content":"5.1 制作简单动画","children":[{"content":"角色的移动与变换","children":[],"payload":{"tag":"li","lines":"78,79"}},{"content":"使用声音与音乐","children":[],"payload":{"tag":"li","lines":"79,81"}}],"payload":{"tag":"h3","lines":"76,77"}},{"content":"5.2 创建互动项目","children":[{"content":"角色之间的互动","children":[],"payload":{"tag":"li","lines":"83,84"}},{"content":"用户输入与响应","children":[],"payload":{"tag":"li","lines":"84,86"}}],"payload":{"tag":"h3","lines":"81,82"}}],"payload":{"tag":"h2","lines":"74,75"}},{"content":"6. 项目实践","children":[{"content":"6.1 制作游戏","children":[{"content":"设计游戏规则","children":[],"payload":{"tag":"li","lines":"90,91"}},{"content":"使用各种编程块实现游戏逻辑","children":[],"payload":{"tag":"li","lines":"91,93"}}],"payload":{"tag":"h3","lines":"88,89"}},{"content":"6.2 创建故事","children":[{"content":"设计情节与角色对话","children":[],"payload":{"tag":"li","lines":"95,96"}},{"content":"制作互动故事","children":[],"payload":{"tag":"li","lines":"96,98"}}],"payload":{"tag":"h3","lines":"93,94"}}],"payload":{"tag":"h2","lines":"86,87"}},{"content":"7. 分享与展示","children":[{"content":"如何保存和分享项目","children":[],"payload":{"tag":"li","lines":"100,101"}},{"content":"在 Scratch 社区展示作品","children":[],"payload":{"tag":"li","lines":"101,102"}},{"content":"参与社区活动与挑战","children":[],"payload":{"tag":"li","lines":"102,104"}}],"payload":{"tag":"h2","lines":"98,99"}},{"content":"8. 进阶学习","children":[{"content":"8.1 使用变量","children":[{"content":"创建和使用变量","children":[],"payload":{"tag":"li","lines":"108,109"}},{"content":"理解变量的作用","children":[],"payload":{"tag":"li","lines":"109,111"}}],"payload":{"tag":"h3","lines":"106,107"}},{"content":"8.2 列表与数组","children":[{"content":"使用列表存储多个数据","children":[],"payload":{"tag":"li","lines":"113,114"}},{"content":"遍历列表中的元素","children":[],"payload":{"tag":"li","lines":"114,116"}}],"payload":{"tag":"h3","lines":"111,112"}},{"content":"8.3 克隆与复制","children":[{"content":"使用克隆功能创建多个角色实例","children":[],"payload":{"tag":"li","lines":"118,119"}},{"content":"管理克隆的生命周期","children":[],"payload":{"tag":"li","lines":"119,120"}}],"payload":{"tag":"h3","lines":"116,117"}}],"payload":{"tag":"h2","lines":"104,105"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

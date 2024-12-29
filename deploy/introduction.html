@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script>
+<script>
+(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+});
+</script>
+<script>
+((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap, null, {
+              "content": "课程介绍（带“🌟”为推荐课程）",
+              "children": [
+                {
+                  "content": "对数学、计算机感兴趣或对计算机接触较多",
+                  "children": [
+                    {
+                      "content": "<strong><a href='./outline/C++.html'>C++编程🌟（点这查看课程大纲）</a></strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 深入理解编程概念，适合有兴趣深入计算机科学的学生。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "6,7"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 参加信息学奥林匹克竞赛等高水平信息学竞赛，进行底层开发和嵌入式系统编程。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "7,8"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨✨✨✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "8,10"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "4,5"}
+                    },
+                    {
+                      "content": "<strong><a href='./outline/OpenGL.html'>OpenGL图形编程（点这查看课程大纲）</a></strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 高级图形编程，涉及复杂算法和数学计算。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "12,13"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 开发高性能科学模拟软件、虚拟现实（VR）等应用。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "13,14"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨✨✨✨✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "14,16"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "10,11"}
+                    }
+                  ],
+                  "payload": {"tag": "h2", "lines": "2,3"}
+                },
+                {
+                  "content": "对数学、计算机没有那么有兴趣或者不了解计算机",
+                  "children": [
+                    {
+                      "content": "<strong><a href='./outline/Python.html'>Python🌟（点这查看课程大纲）</a></strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 简单易学的编程语言，适合初学者，注重实践。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "20,21"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 数据分析、人工智能、基础编程入门学习等。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "21,22"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨✨✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "22,24"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "18,19"}
+                    },
+                    {
+                      "content": "<strong><a href='./outline/Scratch.html'>Scratch🌟（点这查看课程大纲）</a></strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 通过拖拽积木块进行编程，有助于加深对算法对计算机的理解。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "26,27"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 创建动画、游戏和互动故事，激发创造力和逻辑思维。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "27,28"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "28,30"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "24,25"}
+                    }
+                  ],
+                  "payload": {"tag": "h2", "lines": "16,17"}
+                },
+                {
+                  "content": "模块 3: 不了解计算机或不那么感兴趣",
+                  "children": [
+                    {
+                      "content": "<strong><a href='./outline/Web.html'>网页开发（点这查看课程大纲）</a></strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 学习网页开发的基础，适合零基础的学生，注重实用性和创意。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "34,35"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 创建、设计网页。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "35,36"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "36,38"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "32,33"}
+                    },
+                    {
+                      "content": "<strong>软件应用（暂无课程大纲）</strong>",
+                      "children": [
+                        {
+                          "content": "<strong>特点</strong>: 学习市面主流设计软件、剪辑软件、调音软件，如PS、Ir、Pr、AE、达芬奇、Melodyne，适合热爱设计、绘画或者爱好音乐的朋友。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "40,41"}
+                        },
+                        {
+                          "content": "<strong>用途</strong>: 学习掌握相关软件使用，能够为工作添彩。",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "41,42"}
+                        },
+                        {
+                          "content": "<strong>难度系数</strong>: ✨",
+                          "children": [],
+                          "payload": {"tag": "li", "lines": "42,43"}
+                        }
+                      ],
+                      "payload": {"tag": "h3", "lines": "38,39"}
+                    }
+                  ],
+                  "payload": {"tag": "h2", "lines": "30,31"}
+                }
+              ],
+              "payload": {"tag": "h1", "lines": "0,1"}
+            }, {});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"计算机图形学与 OpenGL 图形编程学习大纲","children":[{"content":"先导课","children":[{"content":"学习这个课程可以用来做什么","children":[],"payload":{"tag":"h3","lines":"4,5"}},{"content":"什么是计算机","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"基本组成","children":[{"content":"硬件","children":[{"content":"<strong>输入设备</strong>：如键盘、鼠标和扫描仪，负责将用户输入的数据传递给计算机。","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>输出设备</strong>：如显示器、打印机和扬声器，负责将计算机处理结果呈现给用户。","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<strong>中央处理单元（CPU）</strong>：计算机的“大脑”，负责执行指令和处理数据。","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>内存</strong>：临时存储数据和指令，允许计算机快速访问正在使用的信息。","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h4","lines":"14,15"}},{"content":"软件","children":[{"content":"<strong>操作系统</strong>：管理硬件和软件资源（如 Windows、Linux、macOS），为应用程序提供运行环境。","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>应用程序</strong>：执行特定任务的软件，如文字处理、电子表格和图像编辑工具。","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h4","lines":"23,24"}}],"payload":{"tag":"h3","lines":"10,11"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"1. 计算机图形学概述","children":[{"content":"1.1 定义与目标","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"1.2 发展历史","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"1.3 应用领域","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"2. OpenGL 简介","children":[{"content":"2.1 什么是 OpenGL","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"2.2 OpenGL 的应用领域","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"2.3 OpenGL 与图形渲染的关系","children":[],"payload":{"tag":"li","lines":"40,42"}}],"payload":{"tag":"h2","lines":"36,37"}},{"content":"3. 开发环境配置","children":[{"content":"3.1 安装 OpenGL","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"3.2 配置开发环境（如 Visual Studio、Code::Blocks）","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"3.3 使用 GLFW 或 SDL 创建窗口","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h2","lines":"42,43"}},{"content":"4. 基础概念","children":[{"content":"4.1 图形管线","children":[{"content":"了解图形渲染管线的步骤","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"顶点处理、光栅化、片段处理","children":[],"payload":{"tag":"li","lines":"53,55"}}],"payload":{"tag":"h3","lines":"50,51"}},{"content":"4.2 坐标系统","children":[{"content":"局部坐标与世界坐标","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"视口与投影","children":[],"payload":{"tag":"li","lines":"58,60"}}],"payload":{"tag":"h3","lines":"55,56"}}],"payload":{"tag":"h2","lines":"48,49"}},{"content":"5. OpenGL 基础","children":[{"content":"5.1 创建窗口与上下文","children":[{"content":"使用 GLFW 创建窗口","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"设置 OpenGL 上下文","children":[],"payload":{"tag":"li","lines":"65,67"}}],"payload":{"tag":"h3","lines":"62,63"}},{"content":"5.2 渲染基本图形","children":[{"content":"绘制点、线、三角形","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"使用 VAO 和 VBO 组织数据","children":[],"payload":{"tag":"li","lines":"70,72"}}],"payload":{"tag":"h3","lines":"67,68"}},{"content":"5.3 着色器","children":[{"content":"理解顶点着色器与片段着色器","children":[],"payload":{"tag":"li","lines":"74,75"}},{"content":"使用 GLSL 编写着色器","children":[],"payload":{"tag":"li","lines":"75,77"}}],"payload":{"tag":"h3","lines":"72,73"}}],"payload":{"tag":"h2","lines":"60,61"}},{"content":"6. 纹理与光照","children":[{"content":"6.1 纹理映射","children":[{"content":"加载与应用纹理","children":[],"payload":{"tag":"li","lines":"81,82"}},{"content":"纹理坐标的使用","children":[],"payload":{"tag":"li","lines":"82,84"}}],"payload":{"tag":"h3","lines":"79,80"}},{"content":"6.2 光照模型","children":[{"content":"了解光照的基本概念","children":[],"payload":{"tag":"li","lines":"86,87"}},{"content":"实现简单的光照效果","children":[{"content":"环境光","children":[],"payload":{"tag":"li","lines":"88,89"}},{"content":"反射光","children":[],"payload":{"tag":"li","lines":"89,90"}},{"content":"镜面光","children":[],"payload":{"tag":"li","lines":"90,92"}}],"payload":{"tag":"li","lines":"87,92"}}],"payload":{"tag":"h3","lines":"84,85"}}],"payload":{"tag":"h2","lines":"77,78"}},{"content":"7. 图形变换","children":[{"content":"7.1 变换矩阵","children":[{"content":"变换矩阵的应用","children":[],"payload":{"tag":"li","lines":"96,97"}},{"content":"实现物体的平移、旋转、缩放","children":[],"payload":{"tag":"li","lines":"97,99"}}],"payload":{"tag":"h3","lines":"94,95"}},{"content":"7.2 3D 图形","children":[{"content":"绘制 3D 物体","children":[],"payload":{"tag":"li","lines":"101,102"}},{"content":"使用立方体映射和法线","children":[],"payload":{"tag":"li","lines":"102,104"}}],"payload":{"tag":"h3","lines":"99,100"}}],"payload":{"tag":"h2","lines":"92,93"}},{"content":"8. 图形算法","children":[{"content":"8.1 线段绘制算法","children":[{"content":"Bresenham 算法","children":[],"payload":{"tag":"li","lines":"108,110"}}],"payload":{"tag":"h3","lines":"106,107"}},{"content":"8.2 填充算法","children":[{"content":"扫描线填充","children":[],"payload":{"tag":"li","lines":"112,113"}},{"content":"区域填充","children":[],"payload":{"tag":"li","lines":"113,115"}}],"payload":{"tag":"h3","lines":"110,111"}},{"content":"8.3 裁剪算法","children":[{"content":"Cohen-Sutherland 裁剪算法","children":[],"payload":{"tag":"li","lines":"117,119"}}],"payload":{"tag":"h3","lines":"115,116"}}],"payload":{"tag":"h2","lines":"104,105"}},{"content":"9. 进阶主题","children":[{"content":"9.1 性能优化","children":[{"content":"使用帧缓冲对象（FBO）","children":[],"payload":{"tag":"li","lines":"123,124"}},{"content":"实现视锥剔除与细节层次（LOD）","children":[],"payload":{"tag":"li","lines":"124,126"}}],"payload":{"tag":"h3","lines":"121,122"}},{"content":"9.2 动画与模拟","children":[{"content":"动画基本概念","children":[],"payload":{"tag":"li","lines":"128,129"}},{"content":"关键帧动画","children":[],"payload":{"tag":"li","lines":"129,130"}},{"content":"物理模拟","children":[],"payload":{"tag":"li","lines":"130,132"}}],"payload":{"tag":"h3","lines":"126,127"}}],"payload":{"tag":"h2","lines":"119,120"}},{"content":"10. 项目实践","children":[{"content":"完成简单的 3D 游戏或可视化项目","children":[],"payload":{"tag":"li","lines":"134,135"}},{"content":"整合所学知识，展示创意作品","children":[],"payload":{"tag":"li","lines":"135,136"}}],"payload":{"tag":"h2","lines":"132,133"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
